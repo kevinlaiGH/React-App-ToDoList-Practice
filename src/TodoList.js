@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TodoItems from './TodoItems';
 
 class TodoList extends React.Component {
     constructor(props, context) {
@@ -44,6 +45,7 @@ class TodoList extends React.Component {
          
         </form>
        </div>
+       <TodoItems entries={this.state.items}/>
      </div>
    );
  }
